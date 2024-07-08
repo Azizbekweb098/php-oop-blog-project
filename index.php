@@ -20,7 +20,7 @@ $pots = Post::getAll();
 <ul>
     <?php foreach ($pots as $post): ?>
     <li>
-  <h4><?=  $post->id . ' ' . $post->title ?></h4>
+  <a href="post.php?id=<?= $post->id ?>"><h4><?=  $post->id . ' ' . $post->title ?></h4></a>
         <p><?= $post->body ?></p>
         <span><?= $post->create_at ?></span>
     </li>
