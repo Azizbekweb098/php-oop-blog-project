@@ -1,7 +1,7 @@
 <?php
 
 
-require_once 'bootstrab.php';
+require_once 'config\bootstrab.php';
 
 $pots = Post::getAll();
 
@@ -16,6 +16,7 @@ $pots = Post::getAll();
 </head>
 <body>
 <h1>oop</h1>
+<a href="create-post.php"><h1>Create-Post</h1></a>
 
 <ul>
     <?php foreach ($pots as $post): ?>

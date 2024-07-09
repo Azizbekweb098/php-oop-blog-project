@@ -1,6 +1,6 @@
 <?php
 
-require 'bootstrab.php';
+require 'config\bootstrab.php';
 $post_id = $_GET['id'];
 
 $post = Post::getById($post_id);
@@ -16,7 +16,7 @@ $post = Post::getById($post_id);
 <body>
 <div>
     <h1>
-        <?= $post->id. '_' . $post->title ?>
+        <?= $post->id. '    ' . $post->title ?>
     </h1>
     <p><?= $post->body ?><br></p>
     <small><?= $post->create_at ?></small>

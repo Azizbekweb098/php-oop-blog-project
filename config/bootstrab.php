@@ -1,5 +1,5 @@
 <?php
-require_once 'auto-load.php';
+require_once 'config\auto-load.php';
 
 
 $connection =  new Database('127.0.0.1', 'ii', 'root', '');
